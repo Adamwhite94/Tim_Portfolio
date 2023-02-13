@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: 'League Spartan', sans-serif;
+  color: white;
+  font-weight:1000;
+ 
+}
+body{
+/* background-color: #181818; */
+background-color: #0d0d0d;
+
+}
