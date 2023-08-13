@@ -13,6 +13,7 @@ import {
 
 import Self_Portrait from "../../Images/Self_Portrait.jpg";
 import { AiOutlineLinkedin } from "react-icons/ai";
+import Resume from '../../Resume/Timothy_Leighton_CV.pdf'
 
 function Hero() {
   return (
@@ -29,7 +30,7 @@ function Hero() {
               <AiOutlineLinkedin size={30} />
             </a>
           </IconContainer>
-          <HeroButton>Download CV</HeroButton>
+          <a href={Resume}><HeroButton>Download CV</HeroButton></a>
         </ContentContainer>
       </HeroElements>
     </HeroContainer>
