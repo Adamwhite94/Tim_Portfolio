@@ -13,7 +13,6 @@ import {
   VideoContainer,
 } from "../Projects/ProjectsStyles";
 import { ProjectImages} from "./ProjectData";
-import { AnimatePresence } from "framer-motion";
 
 import { Outlet } from "react-router-dom";
 function Projects() {
@@ -30,13 +29,13 @@ function Projects() {
             <GridList>
               {ProjectImages.map((pic) => {
                 return (
-                  <AnimatePresence>
+              
                     <GridListElement
                       key={pic.id}
                       src={pic.img}
                       
                     />
-                  </AnimatePresence>
+               
                 );
               })}
             </GridList>
