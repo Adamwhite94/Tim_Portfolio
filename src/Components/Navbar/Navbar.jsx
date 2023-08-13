@@ -42,6 +42,4 @@ function Navbar() {
 }
 
 export default Navbar;
-{
-  /* <DropDownLogo src = {ToucanImage}/> */
-}
+

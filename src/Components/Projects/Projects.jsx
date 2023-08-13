@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {
   Container,
   ProjectElements,
@@ -7,10 +7,8 @@ import {
   GridList,
   GridTitle,
   GridText,
-  GridListVideo,
-  GridVideoSource,
   GridListElement,
-  VideoContainer,
+
 } from "../Projects/ProjectsStyles";
 import { ProjectImages} from "./ProjectData";
 
