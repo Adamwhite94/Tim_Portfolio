@@ -14,7 +14,7 @@ GridButtonContainer,
   GridVideoContainer
 } from "./VideoStyles";
 import { ProjectVideos } from "./VideoData";
-import {AiOutlineArrowRight, AiOutlineArrowLeft} from 'react-icons/ai'
+
 function Videos() {
 
   let [index, setIndex] = useState(0);

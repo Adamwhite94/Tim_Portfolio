@@ -1,5 +1,17 @@
-import styled, { keyframes } from "styled-components";
-import { fadeInUp } from "react-animations";
+import styled from "styled-components";
+import { device } from "../Breakpoints/Breakpoints";
+
+// @media only screen and (${device.mobileMSmallerBP}) and (${device.mobileM}) {
+// }
+// @media only screen and (${device.mobileLSmallerBP}) and (${device.mobileL}) {
+// }
+// @media only screen and (${device.mobileLSmallerBP}) and (${device.pixelBP}) {
+// }
+// @media only screen and (${device.tabletSmallerBP}) and (${device.tablet}) {
+// }
+// @media only screen and (${device.laptopSmallerBP}) and (${device.laptop}) {
+// }
+
 
 
 export const HeroContainer = styled.div`
@@ -24,7 +36,19 @@ export const HeroElements = styled.div`
 display:flex;
 align-items: center;
 justify-content: center;
-height: 100vh;
+height: 75vh;
+@media only screen and (${device.mobileMSmallerBP}) and (${device.mobileM}) {
+  flex-direction: column;
+  height: 100vh;
+  margin-left: 0.5rem;
+  margin-top: 2rem;
+}
+@media only screen and (${device.mobileLSmallerBP}) and (${device.mobileL}) {
+  flex-direction: column;
+  height: 100vh;
+  margin-left: 0.5rem;
+  margin-top: 2rem;
+}
 `;
 
 
@@ -35,22 +59,31 @@ export const ContentContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  float:right;
+ 
 
 
 `;
-export const SubInfoContainer = styled.div`
 
-border-top: 1px solid white;
-border-bottom: 1px solid white;
-padding: 10rem;
-`;
 export const HeroImage = styled.img`
   width: 25rem;
   height: 25rem;
   border-radius: 50%; 
   padding-right: 3rem;
- 
+  @media only screen and (${device.mobileMSmallerBP}) and (${device.mobileM}) {
+    width: 15rem;
+  height: 15rem;
+  padding-right: 0;
+}
+@media only screen and (${device.mobileLSmallerBP}) and (${device.mobileL}) {
+  width: 15rem;
+  height: 15rem;
+  padding-right: 0;
+}
+ @media only screen and (${device.tabletSmallerBP}) and (${device.tablet}) {
+  width: 23rem;
+  height: 23rem;
+  padding-right: 0;
+ }
 `;
 export const HeroButton = styled.button`
   width: 15vw;
@@ -61,28 +94,18 @@ export const HeroButton = styled.button`
   border-color: white;
 
   cursor: pointer;
-`;
-export const HeroList = styled.div`
-display:grid;
-grid-template-columns: repeat(4, 1rem);
-justify-content: center;
-grid-column-gap: 14rem;
-grid-row-gap: 2rem;
-margin-top: 4rem;
-padding-right: 10rem;
-`;
-export const HeroListElement = styled.img`
-width: 10rem;
-height: 9rem;
-background-color: white;
+  @media only screen and (${device.mobileMSmallerBP}) and (${device.mobileM}) {
+    width: 20rem;
+    margin-right: 0.5rem;
 
-padding:1rem;
-gap: 2rem;
+}
+@media only screen and (${device.mobileLSmallerBP}) and (${device.mobileL}) {
+  width: 20rem;
+    margin-right: 0.5rem;
+}
 `;
 
-export const SubAchievementsContainer = styled.div`
-margin-top: 5rem;
-`;
+
 
 export const ImageContainer = styled.div`
 display:flex;

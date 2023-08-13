@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   Container,
   ProjectElements,
@@ -12,10 +12,12 @@ import {
   GridListElement,
   VideoContainer,
 } from "../Projects/ProjectsStyles";
-import { ProjectImages, ProjectVideos } from "./ProjectData";
+import { ProjectImages} from "./ProjectData";
+import { AnimatePresence } from "framer-motion";
 
 import { Outlet } from "react-router-dom";
 function Projects() {
+
   return (
     <Container>
       <ProjectElements>
@@ -28,13 +30,18 @@ function Projects() {
             <GridList>
               {ProjectImages.map((pic) => {
                 return (
-                  <GridListElement key={pic.id} src={pic.img} alt={pic.alt} />
+                  <AnimatePresence>
+                    <GridListElement
+                      key={pic.id}
+                      src={pic.img}
+                      
+                    />
+                  </AnimatePresence>
                 );
               })}
             </GridList>
           </GridElements>
         </GridContainer>
-      
       </ProjectElements>
       <Outlet />
     </Container>

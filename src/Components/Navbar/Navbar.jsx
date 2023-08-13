@@ -6,15 +6,10 @@ import {
   DropDownList,
   DropDownListElements,
   DropDownLogo,
-  IconContainer,
   SocialMediaIcons,
-  Icons,
-
 } from "./NavbarStyles";
 
 import {
-  AiOutlineLinkedin,
-  AiOutlineFacebook,
   AiFillHome,
   AiFillVideoCamera,
 } from "react-icons/ai";
@@ -27,32 +22,20 @@ function Navbar() {
   return (
     <DropDownContainer>
       <DropDownElements>
-        {" "}
-        <Icons>
-          <IconContainer>
-       
-            <SocialMediaIcons>
-            <DropDownLogo src={ToucanImage} alt="toucan logo img" />
-              <DropDownList>
-    
-                <DropDownListElements onClick={() => navigate("/")}>
-                  <AiFillHome /> Home
-                </DropDownListElements>
-                <DropDownListElements onClick={() => navigate("/projects")}>
-                  <BsBriefcaseFill /> Projects
-                </DropDownListElements>
-                <DropDownListElements onClick={() => navigate("/videos")}>
-                  <AiFillVideoCamera /> Videos
-                </DropDownListElements>
-         
-              </DropDownList>
-              {/* <AiOutlineFacebook size={40} />
-              <AiOutlineLinkedin size={40} />
-               */}
-            </SocialMediaIcons>
-          </IconContainer>
-        </Icons>
-        {/*how to make buttons not shit */}
+        <DropDownLogo src={ToucanImage} alt="toucan logo img" />
+        <SocialMediaIcons>
+          <DropDownList>
+            <DropDownListElements onClick={() => navigate("/")}>
+              <AiFillHome /> Home
+            </DropDownListElements>
+            <DropDownListElements onClick={() => navigate("/projects")}>
+              <BsBriefcaseFill /> Projects
+            </DropDownListElements>
+            <DropDownListElements onClick={() => navigate("/videos")}>
+              <AiFillVideoCamera /> Videos
+            </DropDownListElements>
+          </DropDownList>
+        </SocialMediaIcons>
       </DropDownElements>
     </DropDownContainer>
   );
