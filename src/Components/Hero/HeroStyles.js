@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../Breakpoints/Breakpoints";
+import { motion } from "framer-motion";
 
 // @media only screen and (${device.mobileMSmallerBP}) and (${device.mobileM}) {
 // }
@@ -17,7 +18,7 @@ import { device } from "../Breakpoints/Breakpoints";
 export const HeroContainer = styled.div`
   background-repeat: no-repeat;
 `;
-export const HeroTitle = styled.h1`
+export const HeroTitle = styled(motion.span)`
   font-size: 5rem;
   text-align: center;
 
@@ -122,3 +123,4 @@ cursor:pointer;
 padding-top: 1rem;
 `;
 
+export const HeroTitleContainer = styled(motion.section)``;

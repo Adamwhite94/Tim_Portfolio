@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../Breakpoints/Breakpoints";
+import { motion } from "framer-motion";
 
 // @media only screen and (${device.mobileMSmallerBP}) and (${device.mobileM}) {
 // }
@@ -64,7 +65,7 @@ height: 30vh;
 `;
 
 
-export const GridTitle = styled.h1`
+export const GridTitle = styled(motion.h1)`
 text-align: center;
 font-size: 5rem;
 height: 1rem;
