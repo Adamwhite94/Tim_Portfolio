@@ -8,6 +8,9 @@ import {
   GridTitle,
   GridText,
   GridListElement,
+  GridImageTitles,
+  TitleDivider,
+  ImageTitleWrapper
 } from "../Projects/ProjectsStyles";
 import { ProjectImages } from "./ProjectData";
 import { AnimatePresence } from "framer-motion";
@@ -38,11 +41,22 @@ function Projects() {
             <GridText>
               All of the things I have made, and what I'm passionate about.
             </GridText>
+   
             <GridList>
               {ProjectImages.map((pic) => {
-                return <GridListElement key={pic.id} src={pic.img} />;
+                return (
+                  <>
+                  <ImageTitleWrapper>
+                  <GridImageTitles >{pic.title}</GridImageTitles>
+                  <TitleDivider></TitleDivider>
+                  </ImageTitleWrapper>
+                  <GridListElement key={pic.id} src={pic.img} />
+                  </> 
+                )
+              
               })}
             </GridList>
+        
           </GridElements>
         </GridContainer>
       </ProjectElements>

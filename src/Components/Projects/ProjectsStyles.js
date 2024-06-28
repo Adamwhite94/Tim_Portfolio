@@ -13,20 +13,34 @@ export const ProjectElements = styled.div`
   `;
 
 export const GridContainer = styled.div`
-
-padding-top: 10vh;
+padding-top: 5vh;
 `;
 export const GridElements = styled.div`
+
+`;
+export const GridImageTitles = styled.h1`
+  margin-top: 4rem;
+`;
+
+export const ImageTitleWrapper = styled.section``;
+export const TitleDivider = styled(motion.hr)`
+ height: 3px;
+  border: none;
+  width: 25rem;
+  border-radius: 1rem;
+  background:  #ff8c00;
+  margin-bottom: 1rem;
+ 
 `;
 export const GridList = styled.div`
-display:grid;
-grid-template-columns: repeat(4,1rem);
-grid-column-gap: 17rem;
-grid-row-gap: 3rem;
-padding-right: 14rem;
-margin-top: 4rem;
-justify-content: center;
+display:flex;
 align-items: center;
+justify-content: center;
+flex-direction: column;
+
+margin-top: 5rem;
+
+
  @media only screen and (${device.mobileMSmallerBP}) and (${device.mobileM}) {
   grid-template-columns:repeat(2,1rem);
   grid-column-gap: 9rem;
@@ -48,8 +62,8 @@ padding-right: 13rem;
 `;
 export const GridListElement = styled.img`
 
-width: 16vw;
-height: 36vh;
+width: 38vw;
+height: 80vh;
 @media only screen and (${device.mobileMSmallerBP}) and (${device.mobileM}) {
 width: 40vw;
 height: 30vh;

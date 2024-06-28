@@ -5,12 +5,13 @@ import {
   GridTitle,
   GridText,
   GridElements,
-
+  GridListTitle,
   VideoElements,
   GridContainer,
   GridListVideo,
 GridButtonContainer,
   GridButton,
+  TitleDivider,
   GridVideoContainer
 } from "./VideoStyles";
 import { ProjectVideos } from "./VideoData";
@@ -42,6 +43,8 @@ function Videos() {
 
           
               <GridVideoContainer key={firstVideo?.id} >
+                <GridListTitle>{firstVideo.title}</GridListTitle>
+                <TitleDivider></TitleDivider>
               <GridListVideo  src={firstVideo?.video} type="video/mp4" autoPlay playsInline muted controls ></GridListVideo>
               <GridButtonContainer>
               <GridButton onClick={(e)=>backClickHandler(e)}>Previous Video</GridButton>

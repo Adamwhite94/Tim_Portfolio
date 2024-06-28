@@ -12,6 +12,17 @@ export const GridListElement = styled.img`
   height: 25vh;
 `;
 
+export const GridListTitle = styled.h1``;
+export const TitleDivider = styled.hr`
+ height: 3px;
+  border: none;
+  width: 25rem;
+  border-radius: 1rem;
+  background:  #ff8c00;
+  margin-bottom: 1rem;
+ 
+`;
+
 export const GridTitle = styled.h1`
   text-align: center;
   font-size: 5rem;
@@ -27,8 +38,8 @@ export const GridText = styled.h3`
 export const VideoContainer = styled.div``;
 
 export const GridListVideo = styled.video`
-  width: 30rem;
-  height: 30rem;
+  width: 75rem;
+  height: 75rem;
   object-fit: contain;
   @media only screen and (${device.mobileMSmallerBP}) and (${device.mobileM}) {
     width: 25rem;
@@ -75,7 +86,7 @@ export const GridVideoContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: 70vh;
-  padding-top: 3rem;
+  padding-top: 20rem;
   flex-direction: column;
   @media only screen and (${device.mobileMSmallerBP}) and (${device.mobileM}) {
     padding-top: 11vh;

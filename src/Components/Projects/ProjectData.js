@@ -13,56 +13,67 @@ import slumsshaded from "../../Tims Work/Slums_Shaded.png"
 export const ProjectImages = [
   {
     id: "1",
+    title: "Butterfly Cosmetics",
     img: butterfly,
     alt: "butterfly cosmetics icon",
   },
   {
     id: "2",
+    title: "Flinders University Advertisements",
     img: flinders,
     alt: "flinders uni icon",
   },
   {
     id: "3",
+    title: "Mango",
     img: mango,
     alt: "mango icon",
   },
   {
     id: "4",
+    title: "Panda",
     img: panda,
     alt: "panda animal icon",
   },
   {
     id: "5",
+    title: "The S",
     img: pattern,
     alt: "nice pattern icon",
   },
   {
     id: "6",
+    title: "Rapshot Video Icon",
     img: rapshot,
     alt: "rap video icon",
   },
   {
     id: "7",
+    title: "WW2 Battle Icon",
     img: wwii,
     alt: "wwii battle icon",
   },
   {
     id: "8",
+    title: "Black and White Slums",
     img: slumsbw,
     alt: "black and white slums",
   },
   {
     id: "9",
+    title: "Colored Slums",
     img: slumscolor,
     alt: "colored slums",
   },
   {
     id: "10",
+    title: "Detailed Slums",
     img: slumsdetailed,
     alt: "detailed slums",
   },
   {
     id: "11",
+    title: "Shaded Slums",
     img: slumsshaded,
     alt: "shaded slums",
   },
